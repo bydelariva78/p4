@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballenas</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Ballenas</h1>
+    <table>
+        <thead>
+            <tr>
+				<th>Id</th>
+                <th>Nombre</th>
+                <th>Alimentación</th>
+                <th>Tamaño (m)</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-ballenas">
+            <!-- Aquí se insertarán las filas dinámicamente -->
+        </tbody>
+    </table>
+	
+	<h2>Añade una nueva ballena</h2>
+    <form id="formBallena">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="alimentacion">Alimentación:</label>
+        <input type="text" id="alimentacion" required>
+
+        <label for="tamano">Tamaño (metros):</label>
+        <input type="number" id="tamano" required>
+
+        <button type="submit">Añadir Ballena</button>
+    </form>
+	<h2>Eliminar una ballena</h2>
+    <form id="borrarBallena">
+        <label for="id">ID de la Ballena:</label>
+        <input type="text" id="id" required>
+
+        <button type="submit" id="borrarBallena">Eliminar Ballena</button>
+    </form>
+	<h2>Actualizar ballena</h2>
+    <form id="actualizarBallena">
+        <label for="id">ID de la Ballena:</label>
+        <input type="text" id="idActualizado" required>
+		
+		<label for="nombre">Nombre:</label>
+        <input type="text" id="nombreNuevo" required>
+
+        <label for="alimentacion">Alimentación:</label>
+        <input type="text" id="alimentacionNueva" required>
+
+        <label for="tamano">Tamaño (metros):</label>
+        <input type="number" id="tamanoNuevo" required>
+
+        <button type="submit" id="actualizarBallena">Actualizar Ballena</button>
+    </form>
+	
+</body>
+</html>
